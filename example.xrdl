@@ -1,0 +1,38 @@
+<!DOCTYPE xrdl>
+<xrdl>
+    <head>
+        <script>
+            setHandlers = () => {
+                document.getElementById('anchor_1').onclick((e) => { 
+                    document.getElementById('model_1').animations['animation_1'].playOnce();
+                });
+            }
+
+            document.onload((e) => {
+                setHandlers();
+            });
+        </script>
+        <style>
+            .offset_1 {
+                position: 1 1 1; /* x y z */
+                rotation: 5 5 5; /* x y z (w) */
+            }
+
+            .offset_2 {
+                position: 0 0 -0.5; /* x y z */
+            }
+        </style>
+    </head>
+    <body>
+        <transform class="ofsset_1">
+            <panel>
+                <span>This is text.</span>
+            </panel>
+            <transform class="ofsset_1">
+                <a id="anchor_1">
+                    <mdl id="model_1" src="cube.glb" />
+                </a>
+            </transform>
+        </transform>
+    </body>
+</xrdl>
