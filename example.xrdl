@@ -24,11 +24,11 @@
         </style>
     </head>
     <body>
-        <transform class="ofsset_1">
+        <transform class="offset_1">
             <panel>
                 <span>This is text.</span>
             </panel>
-            <transform class="ofsset_1">
+            <transform class="offset_2">
                 <a id="anchor_1">
                     <mdl id="model_1" src="cube.glb" />
                 </a>
