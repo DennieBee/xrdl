@@ -3,7 +3,10 @@ class Transform extends HTMLElement {
     super();
   }
 
-  connectedCallback() {}
+  connectedCallback() {
+    this.innerHTML = "TRANSFORM";
+  }
+
   disconnectedCallback() {}
   attributeChangedCallback(name, oldValue, newValue) {}
   adoptedCallback() {}
@@ -18,7 +21,10 @@ class Panel extends Transform {
     super();
   }
 
-  connectedCallback() {}
+  connectedCallback() {
+    this.innerHTML = "PANEL";
+  }
+
   disconnectedCallback() {}
   attributeChangedCallback(name, oldValue, newValue) {}
   adoptedCallback() {}
@@ -33,7 +39,10 @@ class Model extends Transform {
     super();
   }
 
-  connectedCallback() {}
+  connectedCallback() {
+    this.innerHTML = "MODEL";
+  }
+
   disconnectedCallback() {}
   attributeChangedCallback(name, oldValue, newValue) {}
   adoptedCallback() {}
@@ -43,6 +52,6 @@ class Model extends Transform {
   }
 }
 
-customElements.define('transform', Transform);
-customElements.define('panel', Transform);
-customElements.define('model', Transform);
+customElements.define('xrdl-transform', Transform);
+customElements.define('xrdl-panel', Panel);
+customElements.define('xrdl-model', Model);
